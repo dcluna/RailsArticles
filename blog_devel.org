@@ -1,0 +1,39 @@
+* Requerimentos
+** Post
+*** Requerimentos
+O sistema deve permitir o CRUD (Create/Retrieve/Update/Delete) de artigos, com os seguintes atributos:
+Título, campo texto (requerido, máx. de 255 caracteres)
+Corpo, campo texto com múltiplas linhas [textarea] (requerido, máx. de 8191 caractetes)
+Autor, campo texto (requerido, máx. de 127 caracteres)
+Data de publicação (opcional, formato DD/MM/AAAA), utilizar um Date Picker para facilitar o preenchimento. Ver: http://railscasts.com/episodes/213-calendars
+Tags (opcionais) - Utilizar um elemento visual com autocompleter (ver: http://railscasts.com/episodes/258-token-fields). Somente poderão ser selecionadas tags pré-existentes.
+Status. Valores válidos: Publicada, Em Revisão ou Rascunho. Utilize radio buttons ou um pull-down.
+
+Comando: rails generate scaffold Post title:string body:text author:string pub_date:date status:integer
+
+exemplo rails generate scaffold -h : post title body:text published:boolean
+
+** Tags
+*** Requerimentos
+No caso das tags, criar uma entidade à parte, com o respectivo CRUD. O único atributo seria o nome, naturalmente requerido, com limite de 127 caracteres. No Scrum, isto seria uma estória à parte, distinta do CRUD de artigos.
+* Descobertas
+** RSpec + Generators
+Artigos: http://paulbarry.com/articles/2010/01/13/customizing-generators-in-rails-3
+http://gembundler.com/
+- usar o bundler para gerenciar dependências (>> gem install trololol)
+
+* Documentação
+** Rails
+Até agora, achei interessantes:
+http://guides.rubyonrails.org/getting_started.html - intro com muitas informações, é basicamente o que tô seguindo
+http://guides.rubyonrails.org/routing.html - sobre a DSL de roteamento do Rails
+http://guides.rubyonrails.org/migrations.html - sobre as migrações do Rails
+http://www.packtpub.com/article/working-with-rails-activerecord-migrations-models-scaffolding-and-database-completion - companheiro para o acima
+http://overooped.com/post/100354794/ruby-script-generate-scaffold-types - companheiro para scaffolding
+http://guides.rubyonrails.org/active_record_validations_callbacks.html#validations-overview - Validações de modelos
+http://guides.rubyonrails.org/testing.html - testes no Rails
+http://guides.rubyonrails.org/active_record_querying.html - querying no active record (ORM do Rails)
+* Problemas
+** rails console: cannot require readline
+Solução: http://vvv.tobiassjosten.net/ruby-on-rails/fixing-readline-for-the-ruby-on-rails-console
+aparentemente, o ruby não foi compilado com suporte a readline; precisamos recompilá-lo com essa biblio. Usando um apt-get install libreadline5-dev, adquirimos a biblioteca
