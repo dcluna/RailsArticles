@@ -7,7 +7,7 @@
     <th>Autor</th>
     <th>Data de publicação</th>
     <th>Status</th>
-    <th></th>
+    <th>Publicada?</th>
     <th></th>
     <th></th>
   </tr>
@@ -19,6 +19,7 @@
     <td><%= post.author %></td>
     <td><%= post.pub_date %></td>
     <td><%= post.status %></td>
+    <td><%= post.is_published_message %></td>
     <td><%= link_to 'Mostrar', post %></td>
     <td><%= link_to 'Editar', edit_post_path(post) %></td>
     <td><%= link_to 'Deletar', post, confirm: 'Você tem certeza?', method: :delete %></td>

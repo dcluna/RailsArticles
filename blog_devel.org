@@ -33,6 +33,7 @@ http://overooped.com/post/100354794/ruby-script-generate-scaffold-types - compan
 http://guides.rubyonrails.org/active_record_validations_callbacks.html#validations-overview - Validações de modelos
 http://guides.rubyonrails.org/testing.html - testes no Rails
 http://guides.rubyonrails.org/active_record_querying.html - querying no active record (ORM do Rails)
+http://guides.rubyonrails.org/form_helpers.html - para criar o select box dos statuses
 * Problemas
 ** rails console: cannot require readline
 Solução: http://vvv.tobiassjosten.net/ruby-on-rails/fixing-readline-for-the-ruby-on-rails-console
@@ -49,3 +50,5 @@ No pg_config... trying anyway. If building fails, please try again with
 checking for libpq-fe.h... no
 Can't find the 'libpq-fe.h header
 Solução: Looks like that header is part of the libpq-dev package (at least in Natty, Lucid and Oneiric, so that covers all currently supported Ubuntus)
+** Comparar data e tempo em Ruby: http://olabini.com/blog/2011/01/comparing-times-and-dates-in-ruby/
+Solução: to_datetime cast

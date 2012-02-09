@@ -5113,3 +5113,994 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:31:41 -0200
 Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-08 23:34:50 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 92ms (Views: 77.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /home.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /posts.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /tags.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /home.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:34:51 -0200
+Served asset /posts.js - 304 Not Modified (1ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120208014805)
+Migrating to CreateTags (20120209002606)
+  [1m[35m (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (3.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'posts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (11.6ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_tags_on_post_id on tags (7.9ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16488
+ AND a.attnum IN (3)
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-08 23:41:23 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 79ms (Views: 65.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /tags.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:24 -0200
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (16.8ms)
+  Rendered posts/new.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:29 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-08 23:41:58 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (19.0ms)
+  Rendered posts/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:58 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:41:59 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:16 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:45:33 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (21.5ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (uninitialized constant Post::Publicada):
+    19:     <td><%= post.author %></td>
+    20:     <td><%= post.pub_date %></td>
+    21:     <td><%= post.status %></td>
+    22:     <td><%= post.is_published ? :Sim : :Não %></td>
+    23:     <td><%= link_to 'Mostrar', post %></td>
+    24:     <td><%= link_to 'Editar', edit_post_path(post) %></td>
+    25:     <td><%= link_to 'Deletar', post, confirm: 'Você tem certeza?', method: :delete %></td>
+  app/models/post.rb:12:in `is_published'
+  app/views/posts/index.html.erb:22:in `block in _app_views_posts_index_html_erb__2911454383045892357_41354600'
+  app/views/posts/index.html.erb:15:in `each'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__2911454383045892357_41354600'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (34.2ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.5ms)
+
+
+Started GET "/posts/ne" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"ne"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "ne"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with id=ne):
+  app/controllers/posts_controller.rb:16:in `show'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 13.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /posts.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:43 -0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:45:46 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:46:01 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /application.css - 304 Not Modified (60ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /home.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:02 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 26ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:06 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:46:13 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 65ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:47 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:49:49 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:51:09 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (comparison of Date with Time failed):
+    19:     <td><%= post.author %></td>
+    20:     <td><%= post.pub_date %></td>
+    21:     <td><%= post.status %></td>
+    22:     <td><%= post.is_published_message %></td>
+    23:     <td><%= link_to 'Mostrar', post %></td>
+    24:     <td><%= link_to 'Editar', edit_post_path(post) %></td>
+    25:     <td><%= link_to 'Deletar', post, confirm: 'Você tem certeza?', method: :delete %></td>
+  app/models/post.rb:13:in `<'
+  app/models/post.rb:13:in `is_published_message'
+  app/views/posts/index.html.erb:22:in `block in _app_views_posts_index_html_erb__2911454383045892357_30406880'
+  app/views/posts/index.html.erb:15:in `each'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__2911454383045892357_30406880'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:52:29 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (8.4ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (comparison of Date with Time failed):
+    19:     <td><%= post.author %></td>
+    20:     <td><%= post.pub_date %></td>
+    21:     <td><%= post.status %></td>
+    22:     <td><%= post.is_published_message %></td>
+    23:     <td><%= link_to 'Mostrar', post %></td>
+    24:     <td><%= link_to 'Editar', edit_post_path(post) %></td>
+    25:     <td><%= link_to 'Deletar', post, confirm: 'Você tem certeza?', method: :delete %></td>
+  app/models/post.rb:13:in `<'
+  app/models/post.rb:13:in `is_published_message'
+  app/views/posts/index.html.erb:22:in `block in _app_views_posts_index_html_erb__2911454383045892357_30406880'
+  app/views/posts/index.html.erb:15:in `each'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__2911454383045892357_30406880'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 61ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:32 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 48.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:56:47 -0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 28ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /posts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:34 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.3ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /posts.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /tags.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:37 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-08 23:57:39 -0200
+Served asset /tags.js - 304 Not Modified (0ms)

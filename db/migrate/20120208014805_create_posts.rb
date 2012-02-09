@@ -6,7 +6,6 @@ class CreatePosts < ActiveRecord::Migration
       t.string :author
       t.date :pub_date
       t.string :status
-      t.boolean :published
 
       t.timestamps
     end
