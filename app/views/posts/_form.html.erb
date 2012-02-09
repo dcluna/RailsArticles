@@ -1,7 +1,10 @@
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2>Artigo não pôde ser salvo:
+<!-- <%= pluralize(@post.errors.count, "error") %> -->
+<!--         <%= "impedem" && @post.errors.count %> -->
+</h2>
 
       <ul>
       <% @post.errors.full_messages.each do |msg| %>
@@ -12,27 +15,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :Título %><br />
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :body %><br />
+    <%= f.label :Conteúdo %><br />
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.label :author %><br />
+    <%= f.label :Autor %><br />
     <%= f.text_field :author %>
   </div>
   <div class="field">
-    <%= f.label :pub_date %><br />
+    <%= f.label :'Data de publicação' %><br />
     <%= f.date_select :pub_date %>
   </div>
   <div class="field">
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
+    <%= f.label :Status %><br />
+    <%= f.select :status, ['Publicada', "Em Revisão", 'Rascunho'] %>
   </div>
   <div class="field">
-    <%= f.label :published %><br />
+    <%= f.label :Publicado %><br />
     <%= f.check_box :published %>
   </div>
   <div class="actions">

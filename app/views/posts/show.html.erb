@@ -1,22 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
+  <b>Título:</b>
   <%= @post.title %>
 </p>
 
 <p>
-  <b>Body:</b>
+  <b>Conteúdo:</b>
   <%= @post.body %>
 </p>
 
 <p>
-  <b>Author:</b>
+  <b>Autor:</b>
   <%= @post.author %>
 </p>
 
 <p>
-  <b>Pub date:</b>
+  <b>Data de publicação:</b>
   <%= @post.pub_date %>
 </p>
 
@@ -26,10 +26,10 @@
 </p>
 
 <p>
-  <b>Published:</b>
+  <b>Publicado:</b>
   <%= @post.published %>
 </p>
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Editar', edit_post_path(@post) %> |
+<%= link_to 'Voltar', posts_path %>

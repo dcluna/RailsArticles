@@ -36,4 +36,16 @@ http://guides.rubyonrails.org/active_record_querying.html - querying no active r
 * Problemas
 ** rails console: cannot require readline
 Solução: http://vvv.tobiassjosten.net/ruby-on-rails/fixing-readline-for-the-ruby-on-rails-console
-aparentemente, o ruby não foi compilado com suporte a readline; precisamos recompilá-lo com essa biblio. Usando um apt-get install libreadline5-dev, adquirimos a biblioteca
+aparentemente, o ruby não foi compilado com suporte a readline;
+precisamos recompilá-lo com essa biblio. Usando um apt-get install
+libreadline5-dev, adquirimos a biblioteca
+** bundle install: ERROR:  Error installing pg:
+    ERROR: Failed to build gem native extension.
+
+        /home/demonchand/.rvm/rubies/ruby-1.9.2-p0/bin/ruby extconf.rb
+checking for pg_config... no
+No pg_config... trying anyway. If building fails, please try again with
+ --with-pg-config=/path/to/pg_config
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+Solução: Looks like that header is part of the libpq-dev package (at least in Natty, Lucid and Oneiric, so that covers all currently supported Ubuntus)
