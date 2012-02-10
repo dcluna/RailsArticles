@@ -9362,3 +9362,649 @@ Processing by TagsController#index as JSON
   Parameters: {"q"=>"a"}
   [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (name like '%a%')
 Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-09 22:57:59 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /classifications.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /classifications.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /tags.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /token-fields.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:00 -0200
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (73.0ms)
+  Rendered posts/new.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 132ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /classifications.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /posts.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /classifications.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /token-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 22:58:02 -0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-02-09 22:58:13 -0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dq4Hp4S37wxq8E8XnztTR17e4eNRctsCyCjy91aoDzs=", "post"=>{"title"=>"Teste", "body"=>"Artigo teste", "author"=>"Chico Chicote", "pub_date(1i)"=>"2012", "pub_date(2i)"=>"2", "pub_date(3i)"=>"10", "status"=>"Rascunho", "this_tags"=>""}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: this_tags):
+  app/controllers/posts_controller.rb:50:in `new'
+  app/controllers/posts_controller.rb:50:in `create'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (17.5ms)
+  Rendered posts/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 90ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /classifications.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /tags.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /classifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /token-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:49 -0200
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (49.0ms)
+  Rendered posts/new.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /classifications.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /token-fields.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:00:57 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.1ms)
+  Rendered posts/new.html.erb within layouts/application (10.2ms)
+Compiled token-fields.js  (0ms)  (pid 16036)
+Compiled application.js  (5ms)  (pid 16036)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /classifications.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /tags.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /application.js - 304 Not Modified (72ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:01:31 -0200
+Served asset /token-fields.js - 200 OK (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-02-09 23:01:47 -0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dq4Hp4S37wxq8E8XnztTR17e4eNRctsCyCjy91aoDzs=", "post"=>{"title"=>"Teste", "body"=>"Conteúdoi", "author"=>"Chico Chicote", "pub_date(1i)"=>"2012", "pub_date(2i)"=>"2", "pub_date(3i)"=>"10", "status"=>"Rascunho", "tag_tokens"=>""}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: tag_tokens):
+  app/controllers/posts_controller.rb:50:in `new'
+  app/controllers/posts_controller.rb:50:in `create'
+
+
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/dancluna/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /classifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /token-fields.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:50 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (14.6ms)
+  Rendered posts/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 42ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /classifications.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /token-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:03:52 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dq4Hp4S37wxq8E8XnztTR17e4eNRctsCyCjy91aoDzs=", "post"=>{"title"=>"Teste", "body"=>"Teste", "author"=>"Chico Chicote", "pub_date(1i)"=>"2012", "pub_date(2i)"=>"2", "pub_date(3i)"=>"10", "status"=>"Rascunho", "tag_tokens"=>""}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "posts" ("author", "body", "created_at", "pub_date", "status", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["author", "Chico Chicote"], ["body", "Teste"], ["created_at", Fri, 10 Feb 2012 01:04:05 UTC +00:00], ["pub_date", Fri, 10 Feb 2012], ["status", "Rascunho"], ["title", "Teste"], ["updated_at", Fri, 10 Feb 2012 01:04:05 UTC +00:00]]
+  [1m[36m (12.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed 302 Found in 89ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /tags.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /classifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /tags.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /token-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:05 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/classifications.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /classifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/classifications.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /classifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/token-fields.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /token-fields.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 23:04:07 -0200
+Served asset /application.js - 304 Not Modified (2ms)

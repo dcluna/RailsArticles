@@ -1,7 +1,7 @@
 $(function() {
-  $("#post_this_tags").tokenInput("/tags.json", {
+  $("#post_tag_tokens").tokenInput("/tags.json", {
     crossDomain: false,
-    prePopulate: $("#post_this_tags").data("pre"),
+    prePopulate: $("#post_tag_tokens").data("pre"),
     theme: "facebook"
   });
 });

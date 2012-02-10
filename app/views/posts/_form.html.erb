@@ -32,8 +32,8 @@
     <%= f.select :status, ['Publicada', "Em Revisão", 'Rascunho'] %>
   </div>
   <div>
-    <%= f.label :this_tags, "Tags" %><br />
-    <%= f.text_field :this_tags, "data-pre" => @post.tags.map(&:attributes).to_json %>
+    <%= f.label :tag_tokens, "Tags" %><br />
+    <%= f.text_field :tag_tokens, "data-pre" => @post.tags.map(&:attributes).to_json %>
   </div>
   <div class="actions">
     <%= f.submit %>
