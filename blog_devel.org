@@ -55,3 +55,19 @@ Solução: Looks like that header is part of the libpq-dev package (at least in 
 Solução: to_datetime cast
 ** Internacionalização
 http://guides.rubyonrails.org/i18n.html
+** PGError: ERROR:  column classifications.tag_id does not exist
+Esse erro aconteceu primeiramente porque migrei sem modificar a
+migração criada automaticamente; ou seja, as chaves externas não foram
+adicionadas. O problema foi que, após modificar corretamente as
+migrações, tentei utilizar o seguinte comando:
+
+#+BEGIN_SRC sh
+rake db:reset && rake db:migrate
+#+END_SRC
+
+Esse comando, apesar de parecer, NÃO derruba as migrações! O comando
+correto para fazê-lo é:
+
+#+BEGIN_SRC sh
+rake db:rollback && rake db:migrate
+#+END_SRC

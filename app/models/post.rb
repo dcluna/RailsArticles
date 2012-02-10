@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class Post < ActiveRecord::Base
+  # Validations
   allowed_statuses = ['Publicada', "Em Revisão", 'Rascunho']
   validates :title, :presence => true, :length => { :maximum => 255 }
   validates :body, :presence => true, :length => { :maximum => 8191 }

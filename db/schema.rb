@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(:version => 20120210004044) do
 
   create_table "classifications", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "post_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
