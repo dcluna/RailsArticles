@@ -1,7 +1,7 @@
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
-      <h2>Artigo não pôde ser salvo:</h2>
+      <h2>t(:post_not_saved):</h2>
 
       <ul>
       <% @post.errors.full_messages.each do |msg| %>
@@ -12,24 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Título %><br />
+    <%= f.label t(:title) %><br />
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :Conteúdo %><br />
+    <%= f.label t(:body) %><br />
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.label :Autor %><br />
+    <%= f.label t(:author) %><br />
     <%= f.text_field :author %>
   </div>
   <div class="field">
-    <%= f.label :'Data de publicação' %><br />
-    <%= f.date_select :pub_date %>
+    <%= f.label t(:pub_date_message) %><br />
+    <%= f.date_select :pub_date, :order => [:day,:month,:year],
+    :use_month_numbers => true %>
   </div>
   <div class="field">
-    <%= f.label :Status %><br />
-    <%= f.select :status, ['Publicada', "Em Revisão", 'Rascunho'] %>
+    <%= f.label t(:status) %><br />
+    <%= f.select :status, [t(:status_published), t(:status_revision), t(:status_draft)] %>
   </div>
   <div>
     <%= f.label :tag_tokens, "Tags" %><br />

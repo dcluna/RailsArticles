@@ -3,5 +3,12 @@
 
 en:
   hello: "Hello world"
+  title: "Title"
+  body: "Body"
+  author: "Author"
+  pub_date: "Publication Date"
+  status: "Status"
+  published?: "Published?"
   yes: "Yes"
   no : "No"
+  

@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
 class PostsController < ApplicationController
-  before_filter :set_locale
-
-  def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale
-  end
-
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }

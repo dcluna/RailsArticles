@@ -1,0 +1,27 @@
+br:
+  title: "Título"
+  body: "Conteúdo"
+  author: "Autor"
+  pub_date_message: "Data de publicação"
+  status: "Estado"
+  published: "Publicado"
+  yes: "Sim"
+  no: "Não"
+  status_published: "Publicada"
+  status_revision: "Em Revisão"
+  status_draft: "Rascunho"
+  show: "Mostrar"
+  edit: "Editar"
+  delete: "Deletar"
+  new_article: "Novo Artigo"
+  back: "Voltar"
+  editing_post: "Editar Artigo"
+  post_list: "Lista de Artigos"
+  post_not_saved: "Artigo não pôde ser salvo"
+  activerecord:
+    models:
+      post: "Artigo"
+  helpers:
+    submit:
+      create: "Criar um Artigo"
+      update: "Modificar Artigo"

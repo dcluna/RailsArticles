@@ -1,35 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Título:</b>
+  <b><%= t(:title) %>:</b>
   <%= @post.title %>
 </p>
 
 <p>
-  <b>Conteúdo:</b>
+  <b><%= t(:body) %>:</b>
   <%= @post.body %>
 </p>
 
 <p>
-  <b>Autor:</b>
+  <b><%= t(:author) %>:</b>
   <%= @post.author %>
 </p>
 
 <p>
-  <b>Data de publicação:</b>
+  <b><%= t(:pub_date_message) %>:</b>
   <%= @post.pub_date %>
 </p>
 
 <p>
-  <b>Status:</b>
+  <b><%= t(:status) %>:</b>
   <%= @post.status %>
 </p>
 
 <p>
-  <b>Publicado:</b>
-  <%= @post.published? ? 'Sim' : 'Não' %>
+  <b><%= t(:published) %>:</b>
+  <%= @post.published? ? t(:yes) : t(:no) %>
 </p>
 
 
-<%= link_to 'Editar', edit_post_path(@post) %> |
-<%= link_to 'Voltar', posts_path %>
+<%= link_to t(:edit), edit_post_path(@post) %> |
+<%= link_to t(:back), posts_path %>
