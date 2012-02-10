@@ -1,4 +1,11 @@
+# -*- coding: utf-8 -*-
 class PostsController < ApplicationController
+  before_filter :set_locale
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
   # GET /posts
   # GET /posts.json
   def index
@@ -14,7 +21,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }

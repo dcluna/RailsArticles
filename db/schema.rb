@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120209002606) do
+ActiveRecord::Schema.define(:version => 20120210004044) do
+
+  create_table "classifications", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "post_classifications", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -19,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20120209002606) do
     t.string   "author"
     t.date     "pub_date"
     t.string   "status"
-    t.boolean  "published"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

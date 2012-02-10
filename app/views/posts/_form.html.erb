@@ -1,10 +1,7 @@
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
-      <h2>Artigo não pôde ser salvo:
-<!-- <%= pluralize(@post.errors.count, "error") %> -->
-<!--         <%= "impedem" && @post.errors.count %> -->
-</h2>
+      <h2>Artigo não pôde ser salvo:</h2>
 
       <ul>
       <% @post.errors.full_messages.each do |msg| %>
@@ -33,6 +30,10 @@
   <div class="field">
     <%= f.label :Status %><br />
     <%= f.select :status, ['Publicada', "Em Revisão", 'Rascunho'] %>
+  </div>
+  <div>
+    <%= f.label :this_tags, "Tags" %><br />
+    <%= f.text_field :this_tags, "data-pre" => @post.tags.map(&:attributes).to_json %>
   </div>
   <div class="actions">
     <%= f.submit %>
