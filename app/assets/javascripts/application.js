@@ -15,9 +15,12 @@
 //= require_tree .
 
 $(document).ready(function () {
+    // activates tokenInput for the 'tags' field in posts/edit
     $("#post_tag_tokens").tokenInput("/tags.json", {
         crossDomain: false,
         prePopulate: $("#post_tag_tokens").data("pre"),
         theme: "facebook"
     });
+    // activates the datepicker for the pub_date field in posts/edit
+    $('#post_pub_date').datepicker({ altFormat: 'dd-mm-yy', dateFormat: 'dd-mm-yy' });
 });

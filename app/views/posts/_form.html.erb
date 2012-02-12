@@ -25,8 +25,7 @@
   </div>
   <div class="field">
     <%= f.label t(:pub_date_message) %><br />
-    <%= f.date_select :pub_date, :order => [:day,:month,:year],
-    :use_month_numbers => true %>
+    <%= f.text_field :pub_date %>
   </div>
   <div class="field">
     <%= f.label t(:status) %><br />

@@ -73,4 +73,24 @@ rake db:rollback && rake db:migrate
 #+END_SRC
 ** "Publicada? (No/Yes)" @ index.html.erb
 tradução com símbolos :yes e :no falha; deve-se utilizar :_yes e :_no
-** 
+** SyntaxError: reserved word "function" @ posts.js.coffee
+Quando introduzi o código abaixo:
+#+BEGIN_SRC js
+$(document).ready(function () {
+    $("#post_tag_tokens").tokenInput("/tags.json", {
+        crossDomain: false,
+        prePopulate: $("#post_tag_tokens").data("pre"),
+        theme: "facebook"
+    });
+});
+#+END_SRC
+no arquivo posts.js.coffee, o 'asset pipeline' (o sistema que cuida da
+integração e serviço dos arquivos .js) transformava-a em uma chamada
+de função:
+#+BEGIN_SRC js
+$(function () {
+ // código incluído em posts.js.coffee
+}).call(this);
+#+END_SRC
+A solução foi mover o código para application.js.coffee, que não
+realiza esse pré-processamento dos arquivos.

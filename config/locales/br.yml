@@ -22,6 +22,7 @@ br:
   tag_name: "Tag"  
   tag_list: "Lista de tags"
   new_tag: "Nova tag"
+  editing_tag: "Editando tag"
   name: "Nome"
   activerecord:
     models:
