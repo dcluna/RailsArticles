@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :body
       t.string :author
       t.date :pub_date
-      t.string :status
+      t.integer :status
 
       t.timestamps
     end

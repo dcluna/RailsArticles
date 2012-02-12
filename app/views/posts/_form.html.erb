@@ -30,7 +30,7 @@
   </div>
   <div class="field">
     <%= f.label t(:status) %><br />
-    <%= f.select :status, [t(:status_published), t(:status_revision), t(:status_draft)] %>
+    <%= f.select :status, [t(:status_published), t(:status_revision), t(:status_draft)].zip([1,2,3]) %>
   </div>
   <div>
     <%= f.label :tag_tokens, "Tags" %><br />

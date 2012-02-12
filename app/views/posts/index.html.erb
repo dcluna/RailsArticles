@@ -8,6 +8,7 @@
     <th><%= t(:pub_date_message) %></th>
     <th><%= t(:status) %></th>
     <th><%= t(:published) %>?</th>
+    <th>Tags</th>
     <th></th>
     <th></th>
   </tr>
@@ -18,15 +19,17 @@
     <td><%= truncate post.body, :length => 250, :omission => " (...)" %></td>
     <td><%= post.author %></td>
     <td><%= post.pub_date %></td>
-    <td><%= post.status %></td>
-    <td><%= post.published? ? t(:yes) : t(:no) %></td>
+    <td><%= status_to_s post.status %></td>
+    <td><%= post.published? ? t(:_yes) : t(:_no) %></td>
+    <td><%= truncate post.tags.collect{|t| t.name}.to_s, :length => 250, :omission => " (...)" %></td>
     <td><%= link_to t(:show), post %></td>
     <td><%= link_to t(:edit), edit_post_path(post) %></td>
-    <td><%= link_to t(:delete), post, confirm: 'Você tem certeza?', method: :delete %></td>
+    <td><%= link_to t(:delete), post, confirm: t(:you_sure), method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to t(:new_article), new_post_path %>
+<%= link_to t(:new_article), new_post_path %><br />
+<%= link_to t(:tag_list), tags_path %>

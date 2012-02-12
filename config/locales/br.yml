@@ -5,8 +5,8 @@ br:
   pub_date_message: "Data de publicação"
   status: "Estado"
   published: "Publicado"
-  yes: "Sim"
-  no: "Não"
+  _yes: "Sim"
+  _no: "Não"
   status_published: "Publicada"
   status_revision: "Em Revisão"
   status_draft: "Rascunho"
@@ -15,13 +15,22 @@ br:
   delete: "Deletar"
   new_article: "Novo Artigo"
   back: "Voltar"
+  you_sure: "Você tem certeza?"
   editing_post: "Editar Artigo"
   post_list: "Lista de Artigos"
   post_not_saved: "Artigo não pôde ser salvo"
+  tag_name: "Tag"  
+  tag_list: "Lista de tags"
+  new_tag: "Nova tag"
+  name: "Nome"
   activerecord:
     models:
       post: "Artigo"
   helpers:
     submit:
-      create: "Criar um Artigo"
-      update: "Modificar Artigo"
+      post:    
+          create: "Criar um Artigo"
+          update: "Modificar Artigo"
+      tag:
+          create: "Criar tag"
+          update: "Modificar tag"

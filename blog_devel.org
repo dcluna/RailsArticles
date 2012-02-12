@@ -71,3 +71,6 @@ correto para fazê-lo é:
 #+BEGIN_SRC sh
 rake db:rollback && rake db:migrate
 #+END_SRC
+** "Publicada? (No/Yes)" @ index.html.erb
+tradução com símbolos :yes e :no falha; deve-se utilizar :_yes e :_no
+** 

@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 class Post < ActiveRecord::Base
   # Validations
-  allowed_statuses = ['Publicada', "Em Revisão", 'Rascunho']
   validates :title, :presence => true, :length => { :maximum => 255 }
   validates :body, :presence => true, :length => { :maximum => 8191 }
   validates :author, :presence => true, :length => { :maximum => 127 }
-  validates :status, :inclusion => { :in => allowed_statuses, :message => "deve ser um dos seguintes: #{allowed_statuses.to_s}" }
+  validates :status, :numericality => { :only_integer => true, :greater_than => 0, :less_than_or_equal_to => 3 }
 
-  has_many :classifications
-  has_many :tags, :through => :classifications
+  has_and_belongs_to_many :tags
 
+  attr_accessible :title, :body, :author, :status, :pub_date, :tag_tokens # leave them open for mass-assign
   attr_reader :tag_tokens
 
-  def tag_tokens=(ids)
+  def tag_tokens=(ids) # tokenizer
     self.tag_ids = ids.split(",")
   end
 

@@ -1,4 +1,3 @@
 class Tag < ActiveRecord::Base
-  has_many :classifications
-  has_many :posts, :through => :classifications
+  has_and_belongs_to_many :posts
 end

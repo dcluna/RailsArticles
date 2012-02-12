@@ -21,6 +21,8 @@ class PostsControllerTest < ActionController::TestCase
       post :create, post: @post.attributes
     end
 
+    assert_not_nil post.tags # should have a tags object, even if empty
+    
     assert_redirected_to post_path(assigns(:post))
   end
 

@@ -22,12 +22,12 @@
 
 <p>
   <b><%= t(:status) %>:</b>
-  <%= @post.status %>
+  <%= status_to_s @post.status %>
 </p>
 
 <p>
   <b><%= t(:published) %>:</b>
-  <%= @post.published? ? t(:yes) : t(:no) %>
+  <%= @post.published? ? t(:_yes) : t(:_no) %>
 </p>
 
 
