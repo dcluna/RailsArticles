@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= t(:name) %>:</b>
+  <%= @tag.name %>
+</p>
+
+
+<%= link_to t(:edit), edit_tag_path(@tag) %> |
+<%= link_to t(:back), tags_path %>
