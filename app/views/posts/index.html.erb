@@ -21,7 +21,7 @@
     <td><%= post.pub_date %></td>
     <td><%= status_to_s post.status %></td>
     <td><%= post.published? ? t(:_yes) : t(:_no) %></td>
-    <td><%= truncate post.tags.collect{|t| t.name}.to_s, :length => 250, :omission => " (...)" %></td>
+    <td><%= truncate post.tags.collect {|t| t.name}.join(","), :length => 250, :omission => " (...)" %></td>
     <td><%= link_to t(:show), post %></td>
     <td><%= link_to t(:edit), edit_post_path(post) %></td>
     <td><%= link_to t(:delete), post, confirm: t(:you_sure), method: :delete %></td>

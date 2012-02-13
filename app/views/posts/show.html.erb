@@ -30,6 +30,10 @@
   <%= @post.published? ? t(:_yes) : t(:_no) %>
 </p>
 
+<p>
+  <b>Tags:</b>
+  <%= @post.tags.collect {|tag| tag.name }.join(",") %>
+</p>
 
 <%= link_to t(:edit), edit_post_path(@post) %> |
 <%= link_to t(:back), posts_path %>
