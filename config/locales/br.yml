@@ -19,6 +19,7 @@ br:
   editing_post: "Editar Artigo"
   post_list: "Lista de Artigos"
   post_not_saved: "Artigo não pôde ser salvo"
+  tag_not_saved: "Tag não pôde ser salva"
   tag_name: "Tag"  
   tag_list: "Lista de tags"
   new_tag: "Nova tag"
@@ -28,7 +29,20 @@ br:
   post_update_successful: "Artigo atualizado com sucesso."
   tag_creation_successful: "Tag criada com sucesso."
   tag_update_successful: "Tag atualizada com sucesso."
-  Activerecord:
+  activerecord:
+    attributes:
+      post:
+        title: "Título"
+        body: "Conteúdo"
+        author: "Autor"
+      tag:
+        name: "Nome"
+    errors:
+      models:
+        post:
+          blank: "não pode estar em branco!"            
+        tag:
+          blank: "não pode estar em branco!"
     models:
       post: "Artigo"
   helpers:
