@@ -16,6 +16,10 @@ class Post < ActiveRecord::Base
   end
 
   def published?
-    status == 'Publicada'
+    status == 1 and pub_date <= Date.today
+  end
+
+  def tag_names #virtual attr
+    tags.collect {|tag| tag.name}.join(' ')
   end
 end

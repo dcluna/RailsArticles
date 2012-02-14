@@ -32,7 +32,7 @@
 
 <p>
   <b>Tags:</b>
-  <%= @post.tags.collect {|tag| tag.name }.join(",") %>
+  <%= @post.tag_names %>
 </p>
 
 <%= link_to t(:edit), edit_post_path(@post) %> |
