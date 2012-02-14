@@ -24,7 +24,11 @@ br:
   new_tag: "Nova tag"
   editing_tag: "Editando tag"
   name: "Nome"
-  activerecord:
+  post_creation_successful: "Artigo criado com sucesso."
+  post_update_successful: "Artigo atualizado com sucesso."
+  tag_creation_successful: "Tag criada com sucesso."
+  tag_update_successful: "Tag atualizada com sucesso."
+  Activerecord:
     models:
       post: "Artigo"
   helpers:
