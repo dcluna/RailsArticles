@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class PostsControllerTest < ActionController::TestCase
+
   setup do
     @post = posts(:valid_post)
   end

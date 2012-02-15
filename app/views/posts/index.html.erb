@@ -18,13 +18,13 @@
     <td><%= post.title %></td>
     <td><%= truncate post.body, :length => 250, :omission => " (...)" %></td>
     <td><%= post.author %></td>
-    <td><%= post.pub_date %></td>
-    <td><%= status_to_s post.status %></td>
-    <td><%= post.published? ? t(:_yes) : t(:_no) %></td>
+    <td><%= l post.pub_date, :format => :long %></td>
+    <td><%= status_to_s post %></td>
+    <td><%= post.is_published? ? t(:_yes) : t(:_no) %></td>
     <td><%= truncate post.tag_names, :length => 250, :omission => " (...)" %></td>
     <td><%= link_to t(:show), post %></td>
     <td><%= link_to t(:edit), edit_post_path(post) %></td>
-    <td><%= link_to t(:delete), post, confirm: t(:you_sure), method: :delete %></td>
+    <td><%= link_to t(:delete), post, confirm: t(:are_you_sure?), method: :delete %></td>
   </tr>
 <% end %>
 </table>

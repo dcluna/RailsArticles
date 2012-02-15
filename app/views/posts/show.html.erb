@@ -17,17 +17,17 @@
 
 <p>
   <b><%= t(:pub_date_message) %>:</b>
-  <%= @post.pub_date %>
+  <%= l @post.pub_date, :format => :long %>
 </p>
 
 <p>
   <b><%= t(:status) %>:</b>
-  <%= status_to_s @post.status %>
+  <%= status_to_s @post %>
 </p>
 
 <p>
   <b><%= t(:published) %>:</b>
-  <%= @post.published? ? t(:_yes) : t(:_no) %>
+  <%= @post.is_published? ? t(:_yes) : t(:_no) %>
 </p>
 
 <p>

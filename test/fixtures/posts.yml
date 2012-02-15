@@ -5,7 +5,7 @@ valid_post:
   body: Corpo
   author: Autor
   pub_date: 2012-02-07
-  status: Publicada
+  status: 1
 
 invalid_post_status:
   title: Titulo

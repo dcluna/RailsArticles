@@ -94,3 +94,12 @@ $(function () {
 #+END_SRC
 A solução foi mover o código para application.js.coffee, que não
 realiza esse pré-processamento dos arquivos.
+** Validar chaves externas em posts_tags
+Referência: [[http://guides.rubyonrails.org/active_record_validations_callbacks.html#uniqueness][Rails Validations]]
+O código seguinte avalia a unicidade de :name em relação a :year:
+#+BEGIN_SRC ruby
+class Holiday < ActiveRecord::Base
+  validates :name, :uniqueness => { :scope => :year,
+    :message => "should happen once per year" }
+end
+#+END_SRC

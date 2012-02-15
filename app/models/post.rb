@@ -4,7 +4,9 @@ class Post < ActiveRecord::Base
   validates :title, :presence => true, :length => { :maximum => 255 }
   validates :body, :presence => true, :length => { :maximum => 8191 }
   validates :author, :presence => true, :length => { :maximum => 127 }
-  validates :status, :numericality => { :only_integer => true, :greater_than => 0, :less_than_or_equal_to => 3 }
+
+  # Status enumeration
+  as_enum :post_status, { :published => 1, :in_revision => 2, :draft => 3 }, :column => 'status' # statuses have these values for backwards compatibility
 
   has_and_belongs_to_many :tags
 
@@ -15,11 +17,11 @@ class Post < ActiveRecord::Base
     self.tag_ids = ids.split(",")
   end
 
-  def published?
-    status == 1 and pub_date <= Date.today
+  def is_published?
+    self.published? and pub_date <= Date.today
   end
 
-  def tag_names #virtual attr
+  def tag_names # virtual attr to 'store' tag names
     tags.collect {|tag| tag.name}.join(' ')
   end
 end

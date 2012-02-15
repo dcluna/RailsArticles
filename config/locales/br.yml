@@ -15,7 +15,7 @@ br:
   delete: "Deletar"
   new_article: "Novo Artigo"
   back: "Voltar"
-  you_sure: "Você tem certeza?"
+  are_you_sure?: "Você tem certeza?"
   editing_post: "Editar Artigo"
   post_list: "Lista de Artigos"
   post_not_saved: "Artigo não pôde ser salvo"
@@ -53,3 +53,6 @@ br:
       tag:
           create: "Criar tag"
           update: "Modificar tag"
+  date:
+    formats:
+      long: "%d/%m/%Y"

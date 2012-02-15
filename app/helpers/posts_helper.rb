@@ -1,11 +1,11 @@
 module PostsHelper
-  def status_to_s status
+  def status_to_s post
     case
-    when 1
+    when post.published?
       t(:status_published)
-    when 2
+    when post.in_revision?
       t(:status_revision)
-    when 3
+    when post.draft?
       t(:status_draft)
     else
       ""
