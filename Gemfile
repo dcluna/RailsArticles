@@ -8,6 +8,7 @@ gem 'rails', '3.2.0'
 gem 'pg'
 gem 'jquery-rails'
 gem 'newrelic_rpm' # NewRelic monitoring
+gem 'simple_enum'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,8 +20,6 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
-
-  gem 'simple_enum'
 end
 
 group :test do

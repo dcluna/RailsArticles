@@ -43487,3 +43487,324 @@ Served asset /tags.js - 304 Not Modified (0ms)
   [1m[35m (8.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120211222846')
   [1m[36m (10.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120208014805')[0m
   [1m[35m (10.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120211214017')
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+Installed New Relic Browser Monitoring middleware
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-15 00:24:58 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" 
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 2
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 3[0m
+  Rendered posts/index.html.erb within layouts/application (188.1ms)
+Completed 200 OK in 682ms (Views: 536.3ms | ActiveRecord: 34.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /home.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /jquery-ui.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /posts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /jquery-ui.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/token-input-facebook.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /token-input-facebook.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-15 00:24:59 -0200
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.1ms)
+  Rendered posts/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /home.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/token-input-facebook.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /token-input-facebook.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:02 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/tags.json?q=rail" for 127.0.0.1 at 2012-02-15 00:25:22 -0200
+Processing by TagsController#index as JSON
+  Parameters: {"q"=>"rail"}
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" WHERE (name like '%rail%')
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-02-15 00:25:24 -0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z95LRSEvfHCdh0YdbNMwFHdMVuUMOkLTBO5WAbhRxgI=", "post"=>{"title"=>"Teste 4", "body"=>"asdfghjklç", "author"=>"Chico Chicote", "pub_date"=>"15-02-2012", "status"=>"3", "tag_tokens"=>"3"}, "commit"=>"Criar um Artigo"}
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (12.6ms)[0m  [1mINSERT INTO "posts" ("author", "body", "created_at", "pub_date", "status", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["author", "Chico Chicote"], ["body", "asdfghjklç"], ["created_at", Wed, 15 Feb 2012 02:25:24 UTC +00:00], ["pub_date", Wed, 15 Feb 2012], ["status", 3], ["title", "Teste 4"], ["updated_at", Wed, 15 Feb 2012 02:25:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  INSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (4, 3)
+  [1m[36m (29.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/posts/4
+Completed 302 Found in 82ms (ActiveRecord: 43.8ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 4[0m
+  Rendered posts/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /jquery-ui.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/token-input-facebook.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /token-input-facebook.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /jquery-ui.min.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:25 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" 
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 1[0m
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 2
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 3[0m
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = 4
+  Rendered posts/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /jquery-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/token-input-facebook.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /token-input-facebook.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:26 -0200
+Served asset /jquery-ui.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /application.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-02-15 00:25:27 -0200
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
