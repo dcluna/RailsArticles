@@ -7,6 +7,7 @@ gem 'rails', '3.2.0'
 
 gem 'pg'
 gem 'jquery-rails'
+gem 'newrelic_rpm' # NewRelic monitoring
 
 # Gems used only for assets and not required
 # in production environments by default.
