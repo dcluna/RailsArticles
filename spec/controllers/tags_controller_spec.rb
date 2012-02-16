@@ -24,7 +24,7 @@ describe TagsController do
   # Tag. As you add validations to Tag, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {:name => "Tag name"}
   end
   
   # This should return the minimal set of values that should be in the session
@@ -38,7 +38,7 @@ describe TagsController do
     it "assigns all tags as @tags" do
       tag = Tag.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:tags).should eq([tag])
+      assigns(:tags).last.should eq(tag)
     end
   end
 

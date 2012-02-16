@@ -24,7 +24,7 @@ describe PostsController do
   # Post. As you add validations to Post, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {:title => "Title", :body => "Body", :author => "Author"}
   end
   
   # This should return the minimal set of values that should be in the session
@@ -38,7 +38,7 @@ describe PostsController do
     it "assigns all posts as @posts" do
       post = Post.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:posts).should eq([post])
+      assigns(:posts).last.should eq(post)
     end
   end
 
