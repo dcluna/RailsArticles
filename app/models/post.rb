@@ -17,7 +17,7 @@ class Post < ActiveRecord::Base
     self.tag_ids = ids.split(",")
   end
 
-  def is_published?
+  def available??
     self.published? and pub_date <= Date.today
   end
 

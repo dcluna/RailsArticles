@@ -27,7 +27,7 @@
 
 <p>
   <b><%= t(:published) %>:</b>
-  <%= @post.is_published? ? t(:_yes) : t(:_no) %>
+  <%= @post.available?? ? t(:_yes) : t(:_no) %>
 </p>
 
 <p>
