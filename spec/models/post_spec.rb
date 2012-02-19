@@ -2,8 +2,7 @@ require 'spec_helper'
 
 describe Post do
   before(:each) do
-    #    @post = double("post", :title => "Title", :body => "Body", :author => "Author", :pub_date => 2.days.ago, :tags => [@tag_ruby,@tag_rails])
-    @post = Post.new(:title => "Title", :body => "Body", :author => "Author", :pub_date => 2.days.ago)
+    @post = Post.new(:title => "Title", :body => "Body", :author => "Author", :pub_date => 2.days.ago, :status => :draft)
   end
   
   it "can be instantiated" do
@@ -11,7 +10,9 @@ describe Post do
   end
 
   it "can be saved successfully" do
+    @post.save
     @post.should be_persisted
+    @post.delete
   end
 
   it "can be deleted" do

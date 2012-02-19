@@ -5,9 +5,7 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
 gem 'jquery-rails'
-gem 'newrelic_rpm' # NewRelic monitoring
 gem 'simple_enum'
 
 # Gems used only for assets and not required
@@ -24,6 +22,15 @@ end
 
 group :test do
   gem 'rspec-rails'
+end
+
+group :development do
+  gem 'mysql2'
+end
+
+group :production do
+  gem 'pg'
+  gem 'newrelic_rpm' # NewRelic monitoring
 end
 
 # To use ActiveModel has_secure_password

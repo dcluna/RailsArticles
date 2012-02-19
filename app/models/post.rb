@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
 
   has_and_belongs_to_many :tags
 
-  attr_accessible :title, :body, :author, :status_id, :pub_date, :tag_tokens # leave them open for mass-assign
+  attr_accessible :title, :body, :author, :status, :pub_date, :tag_tokens # leave them open for mass-assign
   attr_reader :tag_tokens
 
   def tag_tokens=(ids) # tokenizer
