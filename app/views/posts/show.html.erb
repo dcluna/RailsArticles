@@ -17,7 +17,7 @@
 
 <p>
   <b><%= t(:pub_date_message) %>:</b>
-  <%= l @post.pub_date, :format => :long %>
+  <%= @post.pub_date && l(@post.pub_date, :format => :long) %>
 </p>
 
 <p>
@@ -27,7 +27,7 @@
 
 <p>
   <b><%= t(:published) %>:</b>
-  <%= @post.available?? ? t(:_yes) : t(:_no) %>
+  <%= @post.available? ? t(:_yes) : t(:_no) %>
 </p>
 
 <p>
