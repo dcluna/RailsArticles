@@ -5,11 +5,10 @@ br:
   pub_date_message: "Data de publicação"
   status: "Estado"
   published: "Publicado"
+  in_revision: "Em Revisão"
+  draft: "Rascunho"
   _yes: "Sim"
   _no: "Não"
-  status_published: "Publicada"
-  status_revision: "Em Revisão"
-  status_draft: "Rascunho"
   show: "Mostrar"
   edit: "Editar"
   delete: "Deletar"
@@ -24,6 +23,7 @@ br:
   tag_list: "Lista de tags"
   new_tag: "Nova tag"
   editing_tag: "Editando tag"
+  tags: "Tags"
   name: "Nome"
   post_creation_successful: "Artigo criado com sucesso."
   post_update_successful: "Artigo atualizado com sucesso."
@@ -53,6 +53,9 @@ br:
       tag:
           create: "Criar tag"
           update: "Modificar tag"
+  time:
+    formats:
+      long: "%d/%m/%Y"
   date:
     formats:
       long: "%d/%m/%Y"

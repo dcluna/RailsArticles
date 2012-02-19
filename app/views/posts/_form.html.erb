@@ -29,10 +29,10 @@
   </div>
   <div class="field">
     <%= f.label t(:status) %><br />
-    <%= f.select :status, Post.statuses.each_key {|key| t(key)}.zip(Post.statuses) %>
+    <%= f.select :status, Post.translated_statuses %>
   </div>
   <div>
-    <%= f.label :tag_tokens, "Tags" %><br />
+    <%= f.label :tag_tokens, t(:Tags) %><br />
     <%= f.text_field :tag_tokens, "data-pre" => @post.tags.map(&:attributes).to_json %>
   </div>
   <div class="actions">

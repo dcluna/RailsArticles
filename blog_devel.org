@@ -103,8 +103,20 @@ class Holiday < ActiveRecord::Base
     :message => "should happen once per year" }
 end
 #+END_SRC
+** Adicionar chave estrangeira dupla na migração 'PostsTags'
+Observar os métodos em [[http://api.rubyonrails.org/classes/ActiveRecord/Migration.html][ActiveRecord::Migration]]:
+#+BEGIN_SRC ruby
+def up
+  add_index :posts_tags, [:post_id, :tag_id], :unique => true
+end
+def down
+  remove_index :posts_tags, :column => [:post_id, :tag_id]
+end
+#+END_SRC
 * RSpec e BDD
 OK, pelo que eu entendi, RSpec segue a idéia do BDD, que é uma
 metodologia de desenvolvimento evoluída a partir do TDD. Os testes são
 escritos buscando legibilidade por um usuário não-técnico (inclusive,
-o framework Cucumber )
+o framework Cucumber conta com 'estórias executáveis'), e focam mais
+no comportamento do programa ("it should...") - o que determina um
+'teste contextualizado'.
