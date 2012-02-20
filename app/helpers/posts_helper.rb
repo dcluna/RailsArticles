@@ -4,7 +4,7 @@ module PostsHelper
     when post.published?
       t(:published)
     when post.in_revision?
-      t(:revision)
+      t(:in_revision)
     when post.draft?
       t(:draft)
     else

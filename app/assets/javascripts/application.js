@@ -19,8 +19,18 @@ $(document).ready(function () {
     $("#post_tag_tokens").tokenInput("/tags.json", {
         crossDomain: false,
         prePopulate: $("#post_tag_tokens").data("pre"),
-        theme: "facebook"
+        theme: "facebook",
+        hintText: "Digite um termo para busca",
+        noResultsText: "Sem resultados",
+        searchingText: "Buscando..."
     });
     // activates the datepicker for the pub_date field in posts/edit
-    $('#post_pub_date').datepicker({ altFormat: 'dd-mm-yy', dateFormat: 'dd-mm-yy' });
+    $('#post_pub_date').datepicker({ 
+        altFormat: 'dd-mm-yy', 
+        dateFormat: 'dd-mm-yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+        dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'] 
+    });
 });

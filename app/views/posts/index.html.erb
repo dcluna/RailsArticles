@@ -8,7 +8,7 @@
     <th><%= t(:pub_date_message) %></th>
     <th><%= t(:status) %></th>
     <th><%= t(:published) %>?</th>
-    <th>Tags</th>
+    <th><%= t(:tags) %></th>
     <th></th>
     <th></th>
   </tr>
@@ -31,5 +31,5 @@
 
 <br />
 
-<%= link_to t(:new_article), new_post_path %><br />
+<%= link_to t(:new_post), new_post_path %><br />
 <%= link_to t(:tag_list), tags_path %>

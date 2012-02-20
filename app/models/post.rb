@@ -22,7 +22,7 @@ class Post < ActiveRecord::Base
   end
 
   def tag_names # virtual attr to 'store' tag names
-    tags.collect(&:name).join(' ') # pass symbol as Proc to 'collect'
+    tags.collect(&:name).join(',') # pass symbol as Proc to 'collect'
   end
 
   def self.translated_statuses # virtual attr for translated statuses

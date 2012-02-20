@@ -12,7 +12,7 @@ br:
   show: "Mostrar"
   edit: "Editar"
   delete: "Deletar"
-  new_article: "Novo Artigo"
+  new_post: "Novo Artigo"
   back: "Voltar"
   are_you_sure?: "Você tem certeza?"
   editing_post: "Editar Artigo"
