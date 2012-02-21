@@ -1,4 +1,5 @@
 br:
+  post: "Artigo"
   title: "Título"
   body: "Conteúdo"
   author: "Autor"
@@ -28,34 +29,67 @@ br:
   post_creation_successful: "Artigo criado com sucesso."
   post_update_successful: "Artigo atualizado com sucesso."
   tag_creation_successful: "Tag criada com sucesso."
-  tag_update_successful: "Tag atualizada com sucesso."
+  tag_update_successful: "Tag atualizada com sucesso." 
+  date:
+    formats:
+      long: "%d/%m/%Y"
+    
+      day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+      abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sab]
+
+      # Don't forget the nil at the beginning; there's no such thing as a 0th month
+      month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+      abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+      # Used in date_select and datetime_select.
+      order:
+        - :day
+        - :month
+        - :year
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%d/%m/%Y"      
+    am: "am"
+    pm: "pm"
+
+  # Used in array.to_sentence.
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: ", e "
   activerecord:
+    models:
+      post: "Artigo"
+      tag: "Tag"
     attributes:
+      created_at: "Criado em"
+      updated_at: "Atualizado em"
       post:
         title: "Título"
         body: "Conteúdo"
         author: "Autor"
+        pub_date: "Data de publicação"
+        status: "Estado"
       tag:
         name: "Nome"
     errors:
-      models:
-        post:
-          blank: "não pode estar em branco!"            
-        tag:
-          blank: "não pode estar em branco!"
-    models:
-      post: "Artigo"
+      messages:
+        taken: "has already been taken"
+        record_invalid: "Validation failed: %{errors}"
+        blank: "não pode estar em branco!"            
+#      models:        
+#        post:
+#          blank: "não pode estar em branco!"            
+#        tag:
+#          blank: "não pode estar em branco!"
   helpers:
     submit:
       post:    
-          create: "Criar um Artigo"
-          update: "Modificar Artigo"
+          create: "Criar um artigo"
+          update: "Modificar artigo"
       tag:
           create: "Criar tag"
           update: "Modificar tag"
-  time:
-    formats:
-      long: "%d/%m/%Y"
-  date:
-    formats:
-      long: "%d/%m/%Y"
+
