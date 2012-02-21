@@ -13,6 +13,8 @@ class Post < ActiveRecord::Base
   attr_accessible :title, :body, :author, :status, :pub_date, :tag_tokens # leave them open for mass-assign
   attr_reader :tag_tokens
 
+  paginates_per 10 # posts per page
+
   def tag_tokens=(ids) # tokenizer
     self.tag_ids = ids.split(",")
   end

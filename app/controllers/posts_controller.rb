@@ -3,11 +3,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    current_page = params[:page] ||= 1
+    @posts = Post.page current_page
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @posts }
+      format.json { render json: Post.all }
     end
   end
 
