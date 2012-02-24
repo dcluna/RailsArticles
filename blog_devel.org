@@ -113,6 +113,14 @@ def down
   remove_index :posts_tags, :column => [:post_id, :tag_id]
 end
 #+END_SRC
+** Adicionar Rake tasks à aplicação Rails
+Todos os arquivos .rake na pasta lib/tasks são lidos e adicionados à
+lista de tasks; isso ajuda bastante a criar, por exemplo, um script
+para execução de benchmarks (como foi o caso).
+Uma documentação interessante para os Rakefiles é a do seu [[http://rake.rubyforge.org/files/doc/rakefile_rdoc.html][RubyForge]],
+que conta com o essencial para desenvolver Rake tasks razoáveis.
+Também é interessante checar os métodos de [[http://ruby-doc.org/stdlib-1.9.3/libdoc/fileutils/rdoc/FileUtils.html][FileUtils]] para realizar
+operações com arquivos.
 * RSpec e BDD
 OK, pelo que eu entendi, RSpec segue a idéia do BDD, que é uma
 metodologia de desenvolvimento evoluída a partir do TDD. Os testes são

@@ -16,3 +16,4 @@
 
 # Ignore all benchmark files
 /benchmarks/*
+!/benchmarks/jmeter
