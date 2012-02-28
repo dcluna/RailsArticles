@@ -11,5 +11,9 @@ require 'spec_helper'
 #   end
 # end
 describe PostsHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "translated_statuses" do
+    it "returns a list of statuses in the current locale" do
+      helper.translated_statuses.to_s.should match /([a-zA-Z]( |$))*/
+    end
+  end
 end
