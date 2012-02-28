@@ -121,6 +121,12 @@ Uma documentação interessante para os Rakefiles é a do seu [[http://rake.ruby
 que conta com o essencial para desenvolver Rake tasks razoáveis.
 Também é interessante checar os métodos de [[http://ruby-doc.org/stdlib-1.9.3/libdoc/fileutils/rdoc/FileUtils.html][FileUtils]] para realizar
 operações com arquivos.
+** Trabalhar com BD de testes
+[[http://archives.ryandaigle.com/articles/2007/5/29/what-s-new-in-edge-rails-new-database-rake-tasks][New Database Rake Tasks]]
+Sempre executar esse comando após resetar o banco de dados:
+#+BEGIN_SRC sh
+RAILS_ENV=test rake db:migrate
+#+END_SRC
 * RSpec e BDD
 OK, pelo que eu entendi, RSpec segue a idéia do BDD, que é uma
 metodologia de desenvolvimento evoluída a partir do TDD. Os testes são
