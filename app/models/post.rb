@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   validates :author, :presence => true, :length => { :maximum => 127 }
 
   # Status enumeration
-  as_enum :status, { :published => 1, :in_revision => 2, :draft => 3 }, :column => 'status_id' # statuses have these values for backwards compatibility
+  as_enum :status, { :published => 1, :in_revision => 2, :draft => 3 }, :column => 'status_cd' # statuses have these values for backwards compatibility
 
   has_and_belongs_to_many :tags
 
