@@ -11,4 +11,8 @@ module PostsHelper
       ""
     end
   end
+
+  def translated_statuses # translates statuses
+    Post.statuses.collect {|key,value| [I18n.t(key),key]}
+  end
 end

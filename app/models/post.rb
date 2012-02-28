@@ -26,8 +26,4 @@ class Post < ActiveRecord::Base
   def tag_names # virtual attr to 'store' tag names
     tags.collect(&:name).join(',') # pass symbol as Proc to 'collect'
   end
-
-  def self.translated_statuses # virtual attr for translated statuses
-    statuses.collect {|key,value| [I18n.t(key),key]}
-  end
 end
