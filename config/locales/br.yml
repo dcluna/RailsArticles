@@ -93,3 +93,10 @@ br:
           create: "Criar tag"
           update: "Modificar tag"
 
+  views:
+    pagination:
+      first: "&laquo; Início"
+      last: "Fim &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próximo &rsaquo;"
+      truncate: "..."
