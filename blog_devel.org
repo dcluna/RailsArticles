@@ -55,6 +55,18 @@ Solução: Looks like that header is part of the libpq-dev package (at least in 
 Solução: to_datetime cast
 ** Internacionalização
 http://guides.rubyonrails.org/i18n.html
+*** Kaminari
+https://github.com/amatsuda/kaminari
+#+BEGIN_SRC yaml
+en:
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "..."
+#+END_SRC
 ** PGError: ERROR:  column classifications.tag_id does not exist
 Esse erro aconteceu primeiramente porque migrei sem modificar a
 migração criada automaticamente; ou seja, as chaves externas não foram
@@ -126,6 +138,13 @@ operações com arquivos.
 Sempre executar esse comando após resetar o banco de dados:
 #+BEGIN_SRC sh
 RAILS_ENV=test rake db:migrate
+#+END_SRC
+** Adicionar parâmetros a um Rake task
+http://www.viget.com/extend/protip-passing-parameters-to-your-rake-tasks/
+#+BEGIN_SRC ruby
+task :call, :response do |t, args|
+  response = args[:response]
+end
 #+END_SRC
 * RSpec e BDD
 OK, pelo que eu entendi, RSpec segue a idéia do BDD, que é uma
