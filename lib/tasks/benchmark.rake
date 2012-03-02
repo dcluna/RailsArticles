@@ -40,7 +40,7 @@ namespace "benchmark" do
     if post_id.nil?
       puts "Usage: rake benchmark:update[<post_id>]"
     else
-      run_test(:update,"update_post_#{post_id}") {|requests,threads,filename| "ab -n #{requests} -c #{threads} -p benchmarks/random_post.txt -T 'application/x-www-form-urlencoded' #{APP_ROOT_URL}posts/#{post_id} > #{filename}"}
+      run_test(:update,"update_post_#{post_id}") {|requests,threads,filename| "ab -n #{requests} -c #{threads} -u benchmarks/random_post.txt -T 'application/x-www-form-urlencoded' #{APP_ROOT_URL}posts/#{post_id} > #{filename}"}
     end
   end
 end
